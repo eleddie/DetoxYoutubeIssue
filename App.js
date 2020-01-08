@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import YouTube from 'react-native-youtube';
-import youtubeKey from './key';
+// import YouTube from 'react-native-youtube';
+// import youtubeKey from './key';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -18,14 +18,14 @@ export default class App extends Component {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <YouTube
+        {/* <YouTube
           apiKey={youtubeKey}
           videoId="1GG4YZmz0CI"
           fullscreen={false}
           loop={false}
           play={true}
           style={{ alignSelf: 'stretch', height: 255 }}
-        />
+        /> */}
       </View>
     );
   }
